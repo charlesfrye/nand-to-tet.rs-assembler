@@ -56,7 +56,7 @@ mod tests {
     #[test]
     fn test_add_and_get_entry() {
         let mut table = SymbolTable::new();
-        // table.add_entry("LOOP".to_string(), 4);
-        // assert_eq!(table.get_address("LOOP"), Some(4));
+        table.add_entry("LOOP".to_string(), 4);
+        assert_eq!(table.get_address("LOOP"), 4);
     }
 }
